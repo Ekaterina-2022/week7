@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normilize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media screen and (max-width: 1199px) {
+        .container {
+          display: grid;
+          width: 100vw;
+          height: 100vh;
+          grid-template-areas:
+            "header "
+            "main"
+            "aside";
+        }
+        .header {
+          height: 30vh;
+        }
+        .main {
+          height: 30vh;
+        }
+        .aside {
+          height: 30vh;
+        }
+        .footer {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .container {
+          display: grid;
+          width: 100vw;
+          height: 100vh;
+          grid-template-areas:
+            "header header header header"
+            "main main main aside"
+            "footer footer footer footer";
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 25% 1fr 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Шапка</header>
+      <main class="main">
+        <h2>Основная часть</h2>
+        <div class="inside">
+          <p>Секция</p>
+          <p>Секция</p>
+          <p id="one">Секция</p>
+        </div>
+      </main>
+      <aside class="aside">
+        <h2>Боковая область</h2>
+      </aside>
+      <footer class="footer">
+        <p>Секция</p>
+        <p>Секция</p>
+        <p>Секция</p>
+        <p>Секция</p>
+      </footer>
+    </div>
+  </body>
+</html>

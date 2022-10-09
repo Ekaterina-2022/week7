@@ -1,0 +1,36 @@
+body {
+  font-size: 2em;
+  text-align: center;
+}
+.header {
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background: aquamarine;
+}
+.main {
+  grid-area: main;
+  background: darkcyan;
+}
+.aside {
+  grid-area: aside;
+  background: rebeccapurple;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  background: pink;
+  justify-content: row;
+  justify-content: space-evenly;
+}
+.inside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.inside #one {
+  flex: 0 0 90%;
+}
